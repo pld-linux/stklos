@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc README NEWS ChangeLog TODO PACKAGES-USED AUTHORS SUPPORTED-SRFIS
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man?/*
-%{_libdir}/%{name}/%{version}
+%{_prefix}/lib/%{name}/%{version}
 %{_datadir}/%{name}/%{version}
 %{_includedir}/%{name}
 %{_infodir}/%{name}*
