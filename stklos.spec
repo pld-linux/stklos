@@ -5,12 +5,12 @@ Version:	0.58
 Release:	1
 Group:		Development/Languages
 License:	GPL
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/stklos/%{name}-%{version}.tar.gz
 # Source0-md5:	8ab599f6f0c51e9c1b9973b120d90ac2
 URL:		http://www.stklos.org/
+BuildRequires:	gc-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gdk-pixbuf-gnome-devel
-BuildRequires:	gc-devel
 BuildRequires:	gmp-devel
 BuildRequires:	openldap-devel
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +29,7 @@ clean and easy way.
 
 %description -l pl
 STklos jest szybkim interpreterem bytecodu Scheme staraj±cym siê byæ
-zgodnym z R5RS. Jest nastêpc± STk (interpetatorem Scheme zdolnym do
+zgodnym z R5RS. Jest nastêpc± STk (interpetera Scheme zdolnego do
 korzystania z toolkitu Tk).
 
 STKlos udostêpnia rozszerzalne i efektywne rozszerzenia zorientowane
@@ -50,6 +50,7 @@ CFLAGS="%{rpmcflags} `gdk-pixbuf-config --cflags`"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
@@ -66,8 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README NEWS ChangeLog TODO PACKAGES-USED AUTHORS SUPPORTED-SRFIS
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/man?/*
-%{_prefix}/lib/%{name}/%{version}
-%{_datadir}/%{name}/%{version}
+%{_prefix}/lib/%{name}
+%{_datadir}/%{name}
 %{_includedir}/%{name}
+%{_mandir}/man?/*
 %{_infodir}/%{name}*
