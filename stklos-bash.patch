@@ -1,0 +1,24 @@
+--- stklos-0.70/utils/stklos-ext-install~	2005-03-20 17:51:40.000000000 +0000
++++ stklos-0.70/utils/stklos-ext-install	2005-06-11 23:52:55.657328648 +0000
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ #							-*- shell-script -*-
+ #
+ # stklos-ext-installer		-- STklos extension installer
+--- stklos-0.70/utils/stklos-install~	2005-05-23 12:40:40.000000000 +0000
++++ stklos-0.70/utils/stklos-install	2005-06-11 23:52:37.808042152 +0000
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ # 							-*- shell-script -*-
+ # stklos-install		-- Install STklos extensions
+ # 
+--- stklos-0.70/utils/stklos-config.in~	2005-03-18 14:39:27.000000000 +0000
++++ stklos-0.70/utils/stklos-config.in	2005-06-11 23:52:27.479612312 +0000
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/bash
+ # 							-*- shell-script -*-
+ 
+ # 
