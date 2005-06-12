@@ -1,18 +1,20 @@
 Summary:	Scheme Interpreter/Compiler System
 Summary(pl):	Interpreter/Kompilator systemu scheme
 Name:		stklos
-Version:	0.58
+Version:	0.70
 Release:	1
 Group:		Development/Languages
 License:	GPL
 Source0:	http://dl.sourceforge.net/stklos/%{name}-%{version}.tar.gz
-# Source0-md5:	8ab599f6f0c51e9c1b9973b120d90ac2
+# Source0-md5:	65f94dbea4667f884896964d57b4d5e0
+Patch0:		%{name}-bash.patch
 URL:		http://www.stklos.org/
 BuildRequires:	gc-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gdk-pixbuf-gnome-devel
 BuildRequires:	gmp-devel
 BuildRequires:	openldap-devel
+Requires:	bash
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,6 +43,7 @@ przejrzysty i prosty sposób.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 CFLAGS="%{rpmcflags} `gdk-pixbuf-config --cflags`"
@@ -71,4 +74,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/%{name}
 %{_includedir}/%{name}
 %{_mandir}/man?/*
-%{_infodir}/%{name}*
