@@ -2,7 +2,7 @@ Summary:	Scheme Interpreter/Compiler System
 Summary(pl):	Interpreter/Kompilator systemu scheme
 Name:		stklos
 Version:	0.70
-Release:	1
+Release:	2
 Group:		Development/Languages
 License:	GPL
 Source0:	http://dl.sourceforge.net/stklos/%{name}-%{version}.tar.gz
@@ -13,7 +13,7 @@ BuildRequires:	gc-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gdk-pixbuf-gnome-devel
 BuildRequires:	gmp-devel
-BuildRequires:	openldap-devel
+BuildRequires:	openldap-devel >= 2.3.0
 Requires:	bash
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
