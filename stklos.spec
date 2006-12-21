@@ -1,12 +1,12 @@
 Summary:	Scheme Interpreter/Compiler System
 Summary(pl):	Interpreter/Kompilator systemu scheme
 Name:		stklos
-Version:	0.70
-Release:	2
+Version:	0.82
+Release:	1
 Group:		Development/Languages
 License:	GPL
 Source0:	http://dl.sourceforge.net/stklos/%{name}-%{version}.tar.gz
-# Source0-md5:	65f94dbea4667f884896964d57b4d5e0
+# Source0-md5:	2dad9823a2b34fd0dccc1a63a7978cbb
 Patch0:		%{name}-bash.patch
 URL:		http://www.stklos.org/
 BuildRequires:	gc-devel
