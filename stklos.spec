@@ -1,5 +1,5 @@
 Summary:	Scheme Interpreter/Compiler System
-Summary(pl.UTF-8):   Interpreter/Kompilator systemu scheme
+Summary(pl.UTF-8):	Interpreter/Kompilator systemu scheme
 Name:		stklos
 Version:	0.82
 Release:	1
