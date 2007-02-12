@@ -1,5 +1,5 @@
 Summary:	Scheme Interpreter/Compiler System
-Summary(pl):	Interpreter/Kompilator systemu scheme
+Summary(pl.UTF-8):   Interpreter/Kompilator systemu scheme
 Name:		stklos
 Version:	0.82
 Release:	1
@@ -29,17 +29,17 @@ implementation relies on a CLOS-like Meta Object Protocol.
 STklos also provides a connection to GTK+ allowing to make GUI in a
 clean and easy way.
 
-%description -l pl
-STklos jest szybkim interpreterem bytecodu Scheme staraj±cym siê byæ
-zgodnym z R5RS. Jest nastêpc± STk (interpetera Scheme zdolnego do
+%description -l pl.UTF-8
+STklos jest szybkim interpreterem bytecodu Scheme starajÄ…cym siÄ™ byÄ‡
+zgodnym z R5RS. Jest nastÄ™pcÄ… STk (interpetera Scheme zdolnego do
 korzystania z toolkitu Tk).
 
-STKlos udostêpnia rozszerzalne i efektywne rozszerzenia zorientowane
-objektowo udostêpniaj±ce wielokrotne dziedziczenie, ogólne funkcje,
+STKlos udostÄ™pnia rozszerzalne i efektywne rozszerzenia zorientowane
+objektowo udostÄ™pniajÄ…ce wielokrotne dziedziczenie, ogÃ³lne funkcje,
 wielo-metody.
 
-STklos udostêpnia tak¿e po³±czenia do GTK+ pozwalaj±ce tworzyæ GUI i
-przejrzysty i prosty sposób.
+STklos udostÄ™pnia takÅ¼e poÅ‚Ä…czenia do GTK+ pozwalajÄ…ce tworzyÄ‡ GUI i
+przejrzysty i prosty sposÃ³b.
 
 %prep
 %setup -q
