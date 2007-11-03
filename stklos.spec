@@ -13,7 +13,7 @@ BuildRequires:	gc-devel
 BuildRequires:	gdk-pixbuf-devel
 BuildRequires:	gdk-pixbuf-gnome-devel
 BuildRequires:	gmp-devel
-BuildRequires:	openldap-devel >= 2.3.0
+BuildRequires:	openldap-devel >= 2.4.6
 Requires:	bash
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
