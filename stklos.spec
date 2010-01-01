@@ -15,7 +15,7 @@ BuildRequires:	gdk-pixbuf-gnome-devel
 BuildRequires:	gmp-devel
 BuildRequires:	openldap-devel >= 2.4.6
 Requires:	bash
-Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 STklos is a fast Scheme bytecode interpreter trying to conform to
