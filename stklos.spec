@@ -43,7 +43,7 @@ przejrzysty i prosty sposób.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 CFLAGS="%{rpmcflags} `gdk-pixbuf-config --cflags`"
